@@ -28,7 +28,7 @@ DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
 # DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX.windows.net
+DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xboxlive.com
