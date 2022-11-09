@@ -1,35 +1,48 @@
 # China Area Network
+
 DOMAIN-SUFFIX,flyert.com
 DOMAIN-SUFFIX,gandi.net
 DOMAIN-SUFFIX,snapdrop.net
 DOMAIN,origin-a.akamaihd.net // Origin Download
-# ---(Microsoft)---
-# > Outlook
-DOMAIN,outlook.office365.com
-DOMAIN,smtp-mail.outlook.com
-DOMAIN,smtp.office365.com
-# > Windows Server Update Services
-DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
-DOMAIN-SUFFIX,update.microsoft.com
+
+# > Microsoft
+DOMAIN-SUFFIX,gfx.ms
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,microsoft365.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,microsoftstore.com.cn
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,msocdn.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,s-microsoft.com
+DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,svc.ms
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+# DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX.windows.net
 DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,windowsupdate.microsoft.com
-DOMAIN,download.microsoft.com
-DOMAIN,wustat.windows.com
-DOMAIN,ntservicepack.microsoft.com
-# ------
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xboxlive.com
+
 # > Steam
 DOMAIN-SUFFIX,cm.steampowered.com // Steam Connect Manager Servers
 DOMAIN,api.steampowered.com
+
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
 IP-CIDR,203.205.238.0/23,no-resolve
 IP-CIDR,203.205.254.0/23,no-resolve
-# > IP Query
-DOMAIN,ip.istatmenus.app
-DOMAIN,sms.imagetasks.com
-# > Speed Test
-DOMAIN-SUFFIX,netspeedtestmaster.com
-DOMAIN,speedtest.macpaw.com
+
+
 # > Private Tracker
 DOMAIN-SUFFIX,acg.rip
 DOMAIN-SUFFIX,animebytes.tv
