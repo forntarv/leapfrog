@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoft365.com
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,microsoftstore.com.cn
+DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,msftauth.net
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
@@ -26,7 +27,6 @@ DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,svc.ms
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
-# DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,windows.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,windowsupdate.com

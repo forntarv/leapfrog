@@ -15,6 +15,8 @@ DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,mozilla.cloudflare-dns.com
+DOMAIN-SUFFIX,jetbrains.com
 
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,9gag.com
@@ -533,13 +535,24 @@ DOMAIN-SUFFIX,duolingo.cn
 DOMAIN-SUFFIX,duolingo.com
 
 
-# > Microsoft
+# ---(Microsoft)---
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,msn.com
 DOMAIN-SUFFIX,skype.com
+
+# Microsoft Teams
+DOMAIN-SUFFIX,teams.cdn.live.net
+DOMAIN-SUFFIX,teams.live.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN,teams.events.data.microsoft.com
+# DOMAIN,statics.teams.cdn.office.net
+
+# > Visual Studio
+DOMAIN-SUFFIX,gallerycdn.vsassets.io
 DOMAIN-SUFFIX,visualstudio.com
+# ------
 
 # > Mozilia
 DOMAIN-SUFFIX,firefox.com
