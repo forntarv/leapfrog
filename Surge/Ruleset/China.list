@@ -1,0 +1,80 @@
+# China Area Network
+
+DOMAIN-SUFFIX,flyert.com
+DOMAIN-SUFFIX,gandi.net
+DOMAIN-SUFFIX,snapdrop.net
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN,origin-a.akamaihd.net // Origin Download
+
+# > Microsoft
+DOMAIN-SUFFIX,gfx.ms
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,microsoft365.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,microsoftstore.com.cn
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,msocdn.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,s-microsoft.com
+DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,svc.ms
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+# DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX.windows.net
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xboxlive.com
+
+DOMAIN-KEYWORD,officecdn
+
+# > Steam
+DOMAIN-SUFFIX,cm.steampowered.com // Steam Connect Manager Servers
+DOMAIN,api.steampowered.com
+
+# > Tencent
+IP-CIDR,182.254.116.0/24,no-resolve
+IP-CIDR,203.205.238.0/23,no-resolve
+IP-CIDR,203.205.254.0/23,no-resolve
+
+# > Private Tracker
+DOMAIN-SUFFIX,acg.rip
+DOMAIN-SUFFIX,animebytes.tv
+DOMAIN-SUFFIX,awesome-hd.me
+DOMAIN-SUFFIX,broadcasthe.net
+DOMAIN-SUFFIX,chdbits.co
+DOMAIN-SUFFIX,classix-unlimited.co.uk
+DOMAIN-SUFFIX,comicat.org
+DOMAIN-SUFFIX,empornium.me
+DOMAIN-SUFFIX,gazellegames.net
+DOMAIN-SUFFIX,hdbits.org
+DOMAIN-SUFFIX,hdchina.org
+DOMAIN-SUFFIX,hddolby.com
+DOMAIN-SUFFIX,hdhome.org
+DOMAIN-SUFFIX,hdsky.me
+DOMAIN-SUFFIX,icetorrent.org
+DOMAIN-SUFFIX,jpopsuki.eu
+DOMAIN-SUFFIX,keepfrds.com
+DOMAIN-SUFFIX,madsrevolution.net
+DOMAIN-SUFFIX,morethan.tv
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,myanonamouse.net
+DOMAIN-SUFFIX,nanyangpt.com
+DOMAIN-SUFFIX,ncore.cc
+DOMAIN-SUFFIX,open.cd
+DOMAIN-SUFFIX,ourbits.club
+DOMAIN-SUFFIX,passthepopcorn.me
+DOMAIN-SUFFIX,privatehd.to
+DOMAIN-SUFFIX,pterclub.com
+DOMAIN-SUFFIX,redacted.ch
+DOMAIN-SUFFIX,springsunday.net
+DOMAIN-SUFFIX,tjupt.org
+DOMAIN-SUFFIX,totheglory.im
