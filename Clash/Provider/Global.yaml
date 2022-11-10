@@ -411,7 +411,7 @@ payload:
 
   # > Steam
   - DOMAIN-SUFFIX,steamcommunity.com
-  - DOMAIN,store.steampowered.com
+  # - DOMAIN,store.steampowered.com
   - DOMAIN-SUFFIX,steam-chat.com
 
   # > Telegram
