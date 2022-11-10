@@ -1,0 +1,559 @@
+#-------------------------------------------------------#
+## Comment Clash Premium Configuration
+## Author: For(n)tarv
+## Homepage: https://github.com/forntarv/leapfrog
+##
+## 该文件配置并不能直接使用, 仅供理解和参考
+##
+## 配置文件需要放置在 $HOME/.config/clash/config.yaml
+##
+## ! ! ! 只有这份文件的端口设置会随 Clash 启动生效
+##
+## 如果您不知道如何操作, 请参阅官方 Github 文档:
+## https://github.com/Dreamacro/clash/blob/dev/README.md
+#-------------------------------------------------------#
+
+# 混合代理端口
+mixed-port: 7890
+
+# 本地 HTTP(S) 代理服务器端口
+# port: 7890
+
+# 本地 SOCKS5 代理服务器端口
+# socks-port: 7891
+
+# Linux 和 macOS 的 redir 透明代理端口 (适用于Redirect TCP 和 TProxy UDP 流量)
+# redir-port: 7892
+
+# Linux 的透明代理端口 (适用于 TProxy TCP 和 TProxy UDP 流量)
+# tproxy-port: 7893
+
+# 本地 SOCKS5/HTTP(S) 服务验证
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# 允许局域网的连接 (可用来共享代理)
+allow-lan: true
+bind-address: "*"
+# 此功能仅在 allow-lan 设置为 true 时生效，支持三种参数:
+# "*"                           绑定所有的 IP 地址
+# 192.168.122.11                绑定一个的 IPv4 地址
+# "[aaaa::a8aa:ff:fe09:57d8]"   绑定一个 IPv6 地址
+
+# Clash 路由工作模式
+# 规则模式: rule(规则判断) / global(全局连接) / direct(直接连接)
+mode: rule
+
+# Clash 默认将日志输出至 STDOUT
+# 设置日志输出级别 (不设置时的默认级别: silent, 即不输出任何内容, 以避免因日志内容过大而导致程序内存溢出)
+# 5个级别: silent / info / warning / error / debug. 级别越高日志输出量越大, 越倾向于调试, 若需要请自行开启
+log-level: info
+
+# clash 的 RESTful API 监听地址
+external-controller: 127.0.0.1:9090
+
+# 存放配置文件的相对路径, 或存放网页静态资源的绝对路径
+# Clash core 将会将其部署在 http://{{external-controller}}/ui
+# external-ui: folder
+
+# RESTful API 的口令 (可选)
+# 通过 HTTP 请求头字段中 Authorization: Bearer ${secret} 参数来验证口令
+# 当 RESTful API 的监听地址为 0.0.0.0 (任何设备都可以使用) 时, 请务必设定口令以保证安全
+# secret: "75D0E2B1-5C23-4445-9B24-10C6375214D1"
+
+# 自定义出站网卡接口 (使用时请禁用 tun.auto-detect-interface)
+# interface-name: en0
+
+# fwmark 仅在 Linux 下可用
+# routing-mark: 6666
+
+# https://github.com/iovisor/bcc/blob/master/INSTALL.md#kernel-configuration
+# ebpf:
+#  redirect-to-tun:
+#    - eth0
+
+# 利用 Linux 的 nftables 特性, 实现 redir-port (接管 TCP) 和 TUN (接管 UDP) 共同处理流量
+# 开启该选项时, 需要手动指定 interface-name
+# 相比纯 TUN 模式它在低吞吐设备上可以提高一些性能
+# https://github.com/Dreamacro/clash/wiki/Clash-Premium-Features#auto-redir
+# auto-redir:
+  # enable: true
+  # auto-route: true
+
+tun:
+  # Linux 下的 TUN 配置可以参考 https://github.com/Kr328/clash-tun-for-linux
+  enable: true # 如果需要禁用 TUN 模式, 请设置为 false
+  stack: system # 或 gvisor
+  auto-route: true # 自动设置全局路由表
+  auto-detect-interface: true # 和 interface-name 选项冲突
+  dns-hijack:
+    # - any:53
+    - tcp://8.8.8.8:53
+    - tcp://8.8.4.4:53
+
+profile:
+  # 在 $HOME/.config/clash/.cache 中存储 select 策略组的选项
+  # 如果不需要这个特性, 请设置为 false
+  # 如果两份不同的配置文件中含有相同的策略组, 该选项会被共享
+  store-selected: true
+  # 存储 fake-ip 映射结果
+  store-fake-ip: true
+  # https://github.com/Dreamacro/clash-tracing
+  # tracing: true
+
+
+# 为特定域名指定 DNS 映射, 类似于 hosts 文件, 仅在 dns.enhanced-mode 模式为 redir-host 生效
+# fake-ip 模式下的 DNS 映射请到 dns.nameserver-policy 下配置
+# 支持通配符域名 (例如: *.clash.dev, *.foo.*.example.com)
+# 不使用通配符的域名优先级高于使用通配符的域名 (例如: foo.example.com > *.example.com > .example.com)
+# 注意: +.foo.com 的效果等同于 .foo.com 和 foo.com
+# hosts:
+# '*.clash.dev': 127.0.0.1
+# '.dev': 127.0.0.1
+# 'alpha.clash.dev': '::1'
+
+
+# DNS 服务器配置 (可选; 若不配置，程序内置的 DNS 服务会被关闭)
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false  # 当此选项为 false 时, 将对 AAAA 请求返回空
+
+  # 以下填写的 DNS 服务器将会被用来解析 nameserver 和 fallback 中 DNS 服务器的域名
+  # 仅填写传统 DNS 服务器
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip # 或 redir-host (不推荐), 详情请参阅 https://blog.skk.moe/post/what-happend-to-dns-in-proxy/
+  fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
+  use-hosts: true # 使用系统的 hosts 文件进行 DNS 映射
+
+  # 在以下列表的域名将不会被解析为 fake ip, 这些域名的解析请求将会返回它们真实的 IP 地址
+  fake-ip-filter:
+    - '*.lan'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - 'archlinux.org'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - 'xbox.*.microsoft.com'
+    - '+.xboxlive.com'
+    - '*.logon.battle.net'
+    - '*.logon.battlenet.com.cn'
+    - '*.blzstatic.cn'
+    - 'lens.l.google.com'
+    - 'proxy.golang.org'
+    - '*.mcdn.bilivideo.cn'
+    - 'localhost.*.qq.com'
+
+  # 支持 UDP / TCP / DoT / DoH 协议的 DNS 服务, 可以指明具体的连接端口号
+  # 所有 DNS 请求将会直接发送到服务器, 不经过任何代理
+  # Clash 会使用最先获得的解析记录回复 DNS 请求  
+  nameserver:
+    - https://doh.pub/dns-query # DNS over HTTPS
+    # - tls://dns.rubyfish.cn:853 # DNS over TLS
+    # - dhcp://en0 # DNS from dhcp (网关内置的DNS服务器)
+    # - '8.8.8.8#en0'
+  
+  # 当 fallback 参数被配置时, DNS 请求将同时发送至上方 nameserver 列表和下方 fallback 列表中配置的所有 DNS 服务器
+  # fallback:
+    # - https://dns.google/dns-query
+    # - 'tcp://1.1.1.1#en0'
+
+  # 如果使用 nameserver 列表中的服务器解析的 IP 地址在 fallback-filter.domain 中, 则它们被认为是无效的
+  # Clash 会选用 fallback 列表中 DNS 服务器解析得到的结果
+
+  # 当 fallback-filter.geoip 为 true 时
+  # 当解析得到的 IP 地址的地理位置属于 geoip-code  且  不在 fallback-filter.ipcidr 范围时
+  # Clash 会选用 nameserver 列表中 DNS 服务器解析得到的结果
+  # 当解析得到的 IP 地址的地理位置不属于 geoip-code  或  在 fallback-filter.ipcidr 范围时
+  # Clash 会选用 fallback 中 DNS 服务器的解析结果
+  #
+  # 当 fallback-filter.geoip 为 false 时
+  # 解析得到的 IP 地址的地理位置将不会再被考虑, 只有解析结果在 fallback-filter.ipcidr 范围时
+  # Clash 才会选用 fallback 列表中 DNS 服务器解析得到的结果
+
+  # 采取以上逻辑进行域名解析是为了对抗 DNS 投毒攻击
+
+  # fallback-filter:
+  #   geoip: true
+  #   geoip-code: CN
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #   domain:
+  #     - '+.google.com'
+  #     - '+.facebook.com'
+  #     - '+.youtube.com'
+  
+  # 为特定域名指定 DNS 映射 (fake-ip模式)
+  # nameserver-policy:
+  #   'www.baidu.com': '114.114.114.114'
+  #   '+.internal.crop.com': '10.0.0.1'
+
+
+# 代理服务器配置
+proxies:
+  # Shadowsocks
+  # 支持的 ciphers (加密方式):
+  #   aes-128-gcm aes-192-gcm aes-256-gcm
+  #   aes-128-cfb aes-192-cfb aes-256-cfb
+  #   aes-128-ctr aes-192-ctr aes-256-ctr
+  #   rc4-md5 chacha20-ietf xchacha20
+  #   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
+  - name: "ss1"
+    type: ss
+    server: server
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    # udp: true
+
+  - name: "ss2"
+    type: ss
+    server: server
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    plugin: obfs
+    plugin-opts:
+      mode: tls # or http
+      # host: bing.com
+
+  - name: "ss3"
+    type: ss
+    server: server
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket # no QUIC now
+      # tls: true # wss
+      # skip-cert-verify: true
+      # host: bing.com
+      # path: "/"
+      # mux: true
+      # headers:
+      #   custom: value
+
+  # vmess
+  # cipher 支持 auto/aes-128-gcm/chacha20-poly1305/none
+  - name: "vmess"
+    type: vmess
+    server: server
+    port: 443
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    # udp: true
+    # tls: true
+    # skip-cert-verify: true
+    # servername: example.com # 优先级高于 wss host
+    # network: ws
+    # ws-opts:
+    #   path: /path
+    #   headers:
+    #     Host: v2ray.com
+    #   max-early-data: 2048
+    #   early-data-header-name: Sec-WebSocket-Protocol
+
+  - name: "vmess-h2"
+    type: vmess
+    server: server
+    port: 443
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    network: h2
+    tls: true
+    h2-opts:
+      host:
+        - http.example.com
+        - http-alt.example.com
+      path: /
+  
+  - name: "vmess-http"
+    type: vmess
+    server: server
+    port: 443
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    # udp: true
+    # network: http
+    # http-opts:
+    #   # method: "GET"
+    #   # path:
+    #   #   - '/'
+    #   #   - '/video'
+    #   # headers:
+    #   #   Connection:
+    #   #     - keep-alive
+
+  - name: "vmess-grpc"
+    server: server
+    port: 443
+    type: vmess
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: example.com
+    # skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "example"
+
+  # socks5
+  - name: "socks"
+    type: socks5
+    server: server
+    port: 443
+    # username: username
+    # password: password
+    # tls: true
+    # skip-cert-verify: true
+    # udp: true
+
+  # http
+  - name: "http"
+    type: http
+    server: server
+    port: 443
+    # username: username
+    # password: password
+    # tls: true # https
+    # skip-cert-verify: true
+    # sni: custom.com
+
+  # Snell
+  # 请注意, 目前还没有UDP支持
+  - name: "snell"
+    type: snell
+    server: server
+    port: 44046
+    psk: yourpsk
+    # version: 2
+    # obfs-opts:
+      # mode: http # or tls
+      # host: bing.com
+
+  # Trojan
+  - name: "trojan"
+    type: trojan
+    server: server
+    port: 443
+    password: yourpsk
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
+
+  - name: "trojan-grpc"
+    server: server
+    port: 443
+    type: trojan
+    password: "example"
+    network: grpc
+    sni: example.com
+    # skip-cert-verify: true
+    udp: true
+    grpc-opts:
+      grpc-service-name: "example"
+
+  - name: "trojan-ws"
+    server: server
+    port: 443
+    type: trojan
+    password: "example"
+    network: ws
+    sni: example.com
+    # skip-cert-verify: true
+    udp: true
+    # ws-opts:
+      # path: /path
+      # headers:
+      #   Host: example.com
+
+  # ShadowsocksR
+  # 支持的 ciphers (加密方式): 与 SS 支持的 ciphers 相同
+  # 支持的混淆方式:
+  #   plain http_simple http_post
+  #   random_head tls1.2_ticket_auth tls1.2_ticket_fastauth
+  # 支持的协议:
+  #   origin auth_sha1_v4 auth_aes128_md5
+  #   auth_aes128_sha1 auth_chain_a auth_chain_b  
+  - name: "ssr"
+    type: ssr
+    server: server
+    port: 443
+    cipher: chacha20-ietf
+    password: "password"
+    obfs: tls1.2_ticket_auth
+    protocol: auth_sha1_v4
+    # obfs-param: domain.tld
+    # protocol-param: "#"
+    # udp: true
+
+
+# 策略组配置
+proxy-groups:
+  # 代理转发链, 不要在 relay 策略组的 proxies 中再添加 relay 策略组. 不支持 UDP.
+  # 流量: clash <-> http <-> vmess <-> ss1 <-> ss2 <-> Internet
+  - name: "relay"
+    type: relay
+    proxies:
+      - http
+      - vmess
+      - ss1
+      - ss2
+
+  # url-test 可以自动选择与指定 URL 测速后延迟最短的服务器
+  - name: "auto"
+    type: url-test
+    proxies:
+      - ss1
+      - ss2
+      - vmess1
+    # tolerance: 150 # 小于这个区间服务器延迟差距将不会被考虑 (单位: ms)
+    # lazy: true # 禁用此选项时, 即使没有连接指向该策略组也按照设置的时间间隔进行测速
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  # fallback 按从上到下的顺序选择可用策略. 通过 URL 测速来测试可用性
+  - name: "fallback-auto"
+    type: fallback
+    proxies:
+      - ss1
+      - ss2
+      - vmess1
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  # load-balance 使相同 eTLD 请求在同一条代理线路上
+  - name: "load-balance"
+    type: load-balance
+    proxies:
+      - ss1
+      - ss2
+      - vmess1
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    # strategy: consistent-hashing # or round-robin
+
+  # select 允许用户手动选择代理服务器和策略组
+  # 可以使用 RESTful API 切换选项, 这种方式建议在 GUI 中使用
+  - name: Proxy
+    type: select
+    # disable-udp: true
+    proxies:
+      - ss1
+      - ss2
+      - vmess1
+      - auto
+ 
+  # 使用某一个网卡作为出口进行连接, 支持代理
+  - name: en1
+    type: select
+    interface-name: en1
+    routing-mark: 6667
+    proxies:
+      - DIRECT
+      - Proxy
+
+  - name: UseProvider
+    type: select
+    use:
+      - DuckDuckGo
+    proxies:
+      - Proxy
+      - DIRECT
+
+
+# 代理集配置
+proxy-providers:
+  # 冲鸭机场 (代理集示例)
+  DuckDuckGo:
+    type: http
+    url: "URL" # 替换引号内的内容为你的订阅链接 (Clash 格式)
+    interval: 86400
+    path: ./proxyset/DuckDuckGo.yaml
+    health-check:
+      enable: true
+      interval: 600
+      lazy: true
+      url: http://www.gstatic.com/generate_204
+  
+  # 利用正则表达式从远程代理集中筛选某地区节点
+  # HK:
+    # type: file
+    # path: ./proxyset/DuckDuckGo.yaml
+    # filter: 港|HK|(?i)Hong
+    # health-check:
+      # enable: true
+      # interval: 300
+      # url: http://www.gstatic.com/generate_204  
+
+
+# 规则集配置
+rule-providers:
+  # 目前 Clash Premium 内核从 rule-providers 加载规则文件时仅能直接连接
+  # domain 类型规则集在大量匹配时拥有比 classic 类型更好的性能
+  Advertising:
+    behavior: classic
+    type: http
+    url: "https://raw.githubusercontent.com/forntarv/leapfrog/main/Clash/Provider/Guard/Advertising.yaml"
+    interval: 3600
+    path: ./ruleset/Advertising.yaml
+
+  microsoft:
+    behavior: domain
+    type: file
+    path: ./ruleset/microsoft.yaml
+
+
+# 分流规则配置
+rules:
+  # 示例: DOMAIN(规则类型), google.com (匹配内容),Proxy (指定策略)
+  #
+  # 规则类型:
+  # DOMAIN: 严格匹配某域名. 
+  # DOMAIN-SUFFIX: 匹配某域名及其子域名. 如 DOMAIN-SUFFIX,apple.com 可以匹配 apple.com 和 www.apple.com, 但是不会匹配 anapple.com
+  # DOMAIN-KEYWORD: 简单的字符串搜索, 只要域名包含子串就会匹配
+  # GEOIP: 在配置目录中的 GeoIP 数据库 (Country.mmdb) 中匹配
+  # IP-CIDR: 匹配 IPv4 地址
+  # IP-CIDR6: 匹配 IPv6 地址
+  # SRC-IP-CIDR: 可匹配连接来源 IP 地址, 接管其他设备连接时可使用
+  # SRC-PORT: 可匹配来源主机的端口号
+  # DST-PORT: 可匹配目标主机的端口号
+  # PROCESS-NAME: 可匹配进程名称. (支持macOS、Linux、FreeBSD和Windows)
+  # MATCH: 最终规则, 如果一个连接没有匹配到上面的任何规则就会匹配 MATCH. 此规则是必需的。
+  #
+  # 内置策略:
+  # DIRECT: 直接连接, 不经过任何代理
+  # REJECT：阻止连接, Clash 将会丢弃这部分连接而不做任何处理
+  # 策略可以是 DIRECT, REJECT 或 proxies, proxy-groups 中的任意对象  
+  #
+  # Clash 按照从上到下的顺序进行规则匹配, 当一个连接匹配到某一规则后, 下方所有的规则将被忽略
+  # 对于 IP 规则, 有可选选项 "no-resolve" (GEOIP, IP-CIDR, IP-CIDR6)  
+  # 当一个域名连接匹配到 IP 规则时, 默认行为是进行 DNS 解析以确认该连接对应的域名是否匹配这条规则
+  # 该选项开启时, 该规则不会触发 DNS 解析
+  #
+  - RULE-SET,Advertising,REJECT
+  - DOMAIN-SUFFIX,google.com,auto
+  - DOMAIN-KEYWORD,google,auto
+  - DOMAIN,google.com,auto
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - DST-PORT,80,DIRECT
+  - SRC-PORT,7777,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,,Proxy,dns-failed # dns-failed 会使 DNS 解析失败的连接被转发到代理服务器
+
+# P.S. 或许你可以读读 https://manual.nssurge.com/book/understanding-surge/cn/ ?
