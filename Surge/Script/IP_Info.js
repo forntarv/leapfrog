@@ -20,9 +20,9 @@
         $done({
             title: rootName,
             content:
-                '${jsonData.country} - ${jsonData.city}\n' +
-                '${jsonData.as}\n' +
-                'IP: ${jsonData.query}',
+                `${jsonData.country} - ${jsonData.city}\n` +
+                `${jsonData.as}\n` +
+                `IP: ${jsonData.query}`,
             icon: params.icon,
             "icon-color": params.color
         });
