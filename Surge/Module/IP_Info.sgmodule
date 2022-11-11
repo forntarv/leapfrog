@@ -2,7 +2,7 @@
 #!desc=Display the IP info of Proxy
 
 [Panel]
-IP_Info = script-name=NET_info,update-interval=1
+IP_Info = script-name=IP_info,update-interval=1
 
 [Script]
 IP_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/forntarv/leapfrog/main/Surge/Script/IP_Info.js,argument=icon=externaldrive.connected.to.line.below.fill&color=#9a7ff7&group=Proxy
