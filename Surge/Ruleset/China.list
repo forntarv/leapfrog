@@ -34,6 +34,13 @@ DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xboxlive.com
 
+# > Sony
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,sony.com
+DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+
 # > Steam
 DOMAIN-SUFFIX,cm.steampowered.com // Steam Connect Manager Servers
 DOMAIN,api.steampowered.com
