@@ -291,6 +291,7 @@ payload:
   - DOMAIN-SUFFIX,mvnrepository.com
   - DOMAIN-SUFFIX,quay.io
   - DOMAIN-SUFFIX,redhat.com
+  - DOMAIN-SUFFIX,shadowsocks.org
   - DOMAIN-SUFFIX,sonatype.org
   - DOMAIN-SUFFIX,sourcegraph.com
   - DOMAIN-SUFFIX,spring.io
@@ -298,6 +299,7 @@ payload:
   - DOMAIN-SUFFIX,stackoverflow.com
   - DOMAIN-SUFFIX,torproject.org
   - DOMAIN-SUFFIX,v2ex.com
+  - DOMAIN-SUFFIX,v2fly.org
   - DOMAIN-SUFFIX,wireguard.com
   - DOMAIN-SUFFIX,xda-developers.com
   - DOMAIN-SUFFIX,you-get.org # command-line media download utility
@@ -316,7 +318,7 @@ payload:
   - DOMAIN-SUFFIX,dropboxapi.com
   - DOMAIN-SUFFIX,dropboxusercontent.com
 
-  # > Duckduckgo
+  # > DuckDuckGo
   - DOMAIN-SUFFIX,duckduckgo.com
   - DOMAIN-SUFFIX,spreadprivacy.com
 
