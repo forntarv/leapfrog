@@ -6,40 +6,24 @@ DOMAIN-SUFFIX,snapdrop.net
 DOMAIN,origin-a.akamaihd.net // Origin Download
 DOMAIN-KEYWORD,epicgames
 
-# > Microsoft
-DOMAIN-SUFFIX,gfx.ms
-DOMAIN-SUFFIX,hotmail.com
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,microsoft365.com
-DOMAIN-SUFFIX,microsoftonline.com
-DOMAIN-SUFFIX,microsoftstore.com.cn
-DOMAIN-SUFFIX,msauth.net
-DOMAIN-SUFFIX,msftauth.net
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN-SUFFIX,msftncsi.com
-DOMAIN-SUFFIX,msocdn.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office.net
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,s-microsoft.com
-DOMAIN-SUFFIX,sfx.ms
-DOMAIN-SUFFIX,svc.ms
+# ---(Microsoft)---
+# > OneDrive for Business
 DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,sharepointonline.com
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,xbox.com
-DOMAIN-SUFFIX,xboxlive.com
 
-# > Sony
-DOMAIN-SUFFIX,playstation.com
-DOMAIN-SUFFIX,playstation.net
-DOMAIN-SUFFIX,playstationnetwork.com
-DOMAIN-SUFFIX,sony.com
-DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+# > Outlook
+DOMAIN,outlook.office365.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.office365.com
+
+# > Windows Server Update Services
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,update.microsoft.com
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,windowsupdate.microsoft.com
+DOMAIN,download.microsoft.com
+DOMAIN,wustat.windows.com
+DOMAIN,ntservicepack.microsoft.com
+# ------
 
 # > Steam
 DOMAIN-SUFFIX,cm.steampowered.com // Steam Connect Manager Servers

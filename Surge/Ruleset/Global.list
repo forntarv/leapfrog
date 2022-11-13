@@ -281,7 +281,6 @@ DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,gnu.org
-DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,jitpack.io
 DOMAIN-SUFFIX,maven.org
