@@ -6,6 +6,7 @@ payload:
   - DOMAIN-SUFFIX,snapdrop.net
   - DOMAIN,download.jetbrains.com
   - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN,epicgames
 
   # ---(Microsoft)---
   # > Outlook

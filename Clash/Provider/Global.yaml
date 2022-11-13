@@ -3,26 +3,20 @@ payload:
 
   # (D.C.S.G?)
   - DOMAIN-SUFFIX,lowiro.com // Arcaea
-  - DOMAIN-SUFFIX,spreadprivacy.com
   - DOMAIN-SUFFIX,apkpure.org
-  - DOMAIN-SUFFIX,xda-developers.com
-  - DOMAIN-SUFFIX,cloudflare.com
-  - DOMAIN-SUFFIX,appledaily.com
   - DOMAIN-SUFFIX,lencr.io // Let's Encrypt
   - DOMAIN-SUFFIX,onesignal.com
   - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,notion.so
   - DOMAIN-SUFFIX,adobe.com
   - DOMAIN-SUFFIX,onetrust.com
   - DOMAIN-SUFFIX,cookielaw.org
-  - DOMAIN-SUFFIX,mozilla.cloudflare-dns.com
-  - DOMAIN-SUFFIX,jetbrains.com
+  - DOMAIN-SUFFIX,deepl.com
+  - DOMAIN-SUFFIX,ip-api.com
 
   - DOMAIN-SUFFIX,9cache.com
   - DOMAIN-SUFFIX,9gag.com
-  - DOMAIN-SUFFIX,abc.com
-  - DOMAIN-SUFFIX,anchor.fm
+  - DOMAIN-SUFFIX,anchor.fm // by Spotify
   - DOMAIN-SUFFIX,archive.fo
   - DOMAIN-SUFFIX,archive.org
   - DOMAIN-SUFFIX,archive.ph
@@ -33,7 +27,6 @@ payload:
   - DOMAIN-SUFFIX,axios.com
   - DOMAIN-SUFFIX,bandcamp.com
   - DOMAIN-SUFFIX,bandwagonhost.com
-  - DOMAIN-SUFFIX,bbc.com
   - DOMAIN-SUFFIX,behance.net
   - DOMAIN-SUFFIX,bit.ly
   - DOMAIN-SUFFIX,bloglovin.com
@@ -45,13 +38,11 @@ payload:
   - DOMAIN-SUFFIX,change.org
   - DOMAIN-SUFFIX,cloudcone.com
   - DOMAIN-SUFFIX,clyp.it
-  - DOMAIN-SUFFIX,cna.com.tw
   - DOMAIN-SUFFIX,conoha.jp
   - DOMAIN-SUFFIX,coursehero.com
   - DOMAIN-SUFFIX,c-span.org
   - DOMAIN-SUFFIX,dailymotion.com
   - DOMAIN-SUFFIX,daum.net
-  - DOMAIN-SUFFIX,deadline.com
   - DOMAIN-SUFFIX,depositphotos.com
   - DOMAIN-SUFFIX,deviantart.com
   - DOMAIN-SUFFIX,deviantart.net
@@ -59,33 +50,24 @@ payload:
   - DOMAIN-SUFFIX,disqus.com
   - DOMAIN-SUFFIX,dlive.tv
   - DOMAIN-SUFFIX,dowjones.com
-  - DOMAIN-SUFFIX,duckduckgo.com
   - DOMAIN-SUFFIX,earthcam.com
   - DOMAIN-SUFFIX,edx-cdn.org
   - DOMAIN-SUFFIX,encyclopedia.com
   - DOMAIN-SUFFIX,feeder.co
   - DOMAIN-SUFFIX,feedly.com
   - DOMAIN-SUFFIX,flickr.com
-  - DOMAIN-SUFFIX,flipboard.com
   - DOMAIN-SUFFIX,flitto.com
-  - DOMAIN-SUFFIX,foreignaffairs.com
-  - DOMAIN-SUFFIX,foreignpolicy.com
-  - DOMAIN-SUFFIX,ft.com
-  - DOMAIN-SUFFIX,ftchinese.com
-  - DOMAIN-SUFFIX,ftimg.net
   - DOMAIN-SUFFIX,genius.com
   - DOMAIN-SUFFIX,getsync.com
   - DOMAIN-SUFFIX,gfw.report
-  - DOMAIN-SUFFIX,git.io
   - DOMAIN-SUFFIX,githack.com
   - DOMAIN-SUFFIX,graphql.org
+  - DOMAIN-SUFFIX,greatfire.org
   - DOMAIN-SUFFIX,hackmd.io
   - DOMAIN-SUFFIX,heroku.com
-  - DOMAIN-SUFFIX,hket.com
-  - DOMAIN-SUFFIX,huffpost.com
+  - DOMAIN-SUFFIX,hostloc.com
   - DOMAIN-SUFFIX,i-cable.com
   - DOMAIN-SUFFIX,imgur.com
-  - DOMAIN-SUFFIX,independent.co.uk
   - DOMAIN-SUFFIX,inoreader.com
   - DOMAIN-SUFFIX,is.gd
   - DOMAIN-SUFFIX,issuu.com
@@ -96,20 +78,12 @@ payload:
   - DOMAIN-SUFFIX,listennotes.com
   - DOMAIN-SUFFIX,livestream.com
   - DOMAIN-SUFFIX,mailchimp.com
-  - DOMAIN-SUFFIX,matrix.org
   - DOMAIN-SUFFIX,medibang.com
-  - DOMAIN-SUFFIX,medium.com
   - DOMAIN-SUFFIX,mixlr.com
   - DOMAIN-SUFFIX,moon.fm
   - DOMAIN-SUFFIX,mubi.com
   - DOMAIN-SUFFIX,myspace.com
   - DOMAIN-SUFFIX,myspacecdn.com
-  - DOMAIN-SUFFIX,nbcnews.com
-  - DOMAIN-SUFFIX,neowin.net
-  - DOMAIN-SUFFIX,newstatesman.com
-  - DOMAIN-SUFFIX,newsweek.com
-  - DOMAIN-SUFFIX,newyorker.com
-  - DOMAIN-SUFFIX,now.com
   - DOMAIN-SUFFIX,ok.ru
   - DOMAIN-SUFFIX,omny.fm
   - DOMAIN-SUFFIX,openvpn.net
@@ -133,8 +107,6 @@ payload:
   - DOMAIN-SUFFIX,redditlist.com
   - DOMAIN-SUFFIX,resilio.com
   - DOMAIN-SUFFIX,rsshub.app
-  - DOMAIN-SUFFIX,rthk.hk
-  - DOMAIN-SUFFIX,scmp.com
   - DOMAIN-SUFFIX,scribd.com
   - DOMAIN-SUFFIX,search.com
   - DOMAIN-SUFFIX,shutterstock.com
@@ -142,61 +114,35 @@ payload:
   - DOMAIN-SUFFIX,sketchappsources.com
   - DOMAIN-SUFFIX,slideshare.net
   - DOMAIN-SUFFIX,smartmailcloud.com
-  - DOMAIN-SUFFIX,smh.com.au
   - DOMAIN-SUFFIX,speakerdeck.com
   - DOMAIN-SUFFIX,spideroak.com
   - DOMAIN-SUFFIX,spiegel.de
   - DOMAIN-SUFFIX,startpage.com
   - DOMAIN-SUFFIX,steemit.com
-  - DOMAIN-SUFFIX,straitstimes.com
   - DOMAIN-SUFFIX,streamable.com
   - DOMAIN-SUFFIX,substack.com
-  - DOMAIN-SUFFIX,swissinfo.ch
   - DOMAIN-SUFFIX,tapatalk.com
-  - DOMAIN-SUFFIX,techspot.com
   - DOMAIN-SUFFIX,textnow.me
-  - DOMAIN-SUFFIX,theage.com.au
-  - DOMAIN-SUFFIX,theatlantic.com
-  - DOMAIN-SUFFIX,theaustralian.com.au
-  - DOMAIN-SUFFIX,theconversation.com
-  - DOMAIN-SUFFIX,thediplomat.com
-  - DOMAIN-SUFFIX,theguardian.com
-  - DOMAIN-SUFFIX,theinitium.com
   - DOMAIN-SUFFIX,themoviedb.org
   - DOMAIN-SUFFIX,thetvdb.com
-  - DOMAIN-SUFFIX,time.com
   - DOMAIN-SUFFIX,tineye.com
   - DOMAIN-SUFFIX,tiny.cc
-  - DOMAIN-SUFFIX,torproject.org
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,turbobit.net
-  - DOMAIN-SUFFIX,tutanota.com
   - DOMAIN-SUFFIX,urbandictionary.com
   - DOMAIN-SUFFIX,ustream.tv
-  - DOMAIN-SUFFIX,v2ex.com
-  - DOMAIN-SUFFIX,venturebeat.com
   - DOMAIN-SUFFIX,viber.com
   - DOMAIN-SUFFIX,vimeo.com
   - DOMAIN-SUFFIX,voxer.com
   - DOMAIN-SUFFIX,vzw.com
-  - DOMAIN-SUFFIX,washingtonpost.com
   - DOMAIN-SUFFIX,wattpad.com
-  - DOMAIN-SUFFIX,welt.de
   - DOMAIN-SUFFIX,whoer.net
   - DOMAIN-SUFFIX,wikimapia.org
   - DOMAIN-SUFFIX,wikiwand.com
   - DOMAIN-SUFFIX,wire.com
-  - DOMAIN-SUFFIX,wireguard.com
-  - DOMAIN-SUFFIX,wn.com
   - DOMAIN-SUFFIX,worldcat.org
-  - DOMAIN-SUFFIX,wsj.com
-  - DOMAIN-SUFFIX,wsj.net
   - DOMAIN-SUFFIX,x.co
-  - DOMAIN-SUFFIX,yandex.ru
-  - DOMAIN-SUFFIX,you-get.org
-  - DOMAIN-SUFFIX,zaobao.com
   - DOMAIN-SUFFIX,zello.com
-  - DOMAIN-SUFFIX,zeronet.io
   - DOMAIN-SUFFIX,z-lib.org
   - DOMAIN-SUFFIX,zophar.net
   - DOMAIN-SUFFIX,zyxel.com
@@ -236,20 +182,23 @@ payload:
   - DOMAIN-SUFFIX,dialogflow.com
   - DOMAIN-SUFFIX,feedburner.com
   - DOMAIN-SUFFIX,firebaseio.com
+  - DOMAIN-SUFFIX,itasoftware.com
   - DOMAIN-SUFFIX,g.co
   - DOMAIN-SUFFIX,getoutline.org
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,gmail.com
   - DOMAIN-SUFFIX,gmodules.com
+    # - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,gvt0.com
   - DOMAIN-SUFFIX,gvt1.com
   - DOMAIN-SUFFIX,gvt3.com
-  - DOMAIN-SUFFIX,itasoftware.com
+  - DOMAIN-SUFFIX,keyhole.com
+  - DOMAIN-SUFFIX,material.io
   - DOMAIN-SUFFIX,on2.com
   - DOMAIN-SUFFIX,recaptcha.net
   - DOMAIN-SUFFIX,schema.org
-  - DOMAIN-SUFFIX,tenor.com
   - DOMAIN-SUFFIX,tensorflow.org
+  - DOMAIN-SUFFIX,tenor.com
   - DOMAIN-SUFFIX,tfhub.dev
   - DOMAIN-SUFFIX,tiltbrush.com
   - DOMAIN-SUFFIX,waymo.com
@@ -272,13 +221,18 @@ payload:
   - DOMAIN-SUFFIX,videopress.com
   - DOMAIN-SUFFIX,wordpress.com
 
-  # > Bloomberg
-  - DOMAIN-SUFFIX,bloomberg.cn
-  - DOMAIN-SUFFIX,bloomberg.com
-  - DOMAIN-SUFFIX,bloomberg.de
-  - DOMAIN-SUFFIX,bloombergview.com
+  # > Cloudflare
+  - DOMAIN-SUFFIX,cf-ipfs.com
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,every1dns.net
+  - DOMAIN-SUFFIX,pages.dev
+  - DOMAIN-SUFFIX,videodelivery.net
+  - DOMAIN-SUFFIX,warp.plus
+  - DOMAIN-SUFFIX,workers.dev
+  - DOMAIN-KEYWORD,cloudflare
 
   # > Clubhouse
+  - DOMAIN-SUFFIX,clubhouse.com
   - DOMAIN-SUFFIX,clubhouseapi.com
   - DOMAIN-SUFFIX,joinclubhouse.com
   - DOMAIN,clubhouse.pubnubapi.com
@@ -318,6 +272,37 @@ payload:
   - DOMAIN-SUFFIX,uniswap.org
   - DOMAIN-SUFFIX,zb.com
 
+  # > Developer
+  - DOMAIN-SUFFIX,archlinux.org
+  - DOMAIN-SUFFIX,apache.org
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,elastic.co
+  - DOMAIN-SUFFIX,elastic.com
+  - DOMAIN-SUFFIX,gcr.io
+  - DOMAIN-SUFFIX,gitlab.com
+  - DOMAIN-SUFFIX,gitlab.io
+  - DOMAIN-SUFFIX,gnu.org
+  - DOMAIN-SUFFIX,jetbrains.com
+  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,jitpack.io
+  - DOMAIN-SUFFIX,maven.org
+  - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,matrix.org
+  - DOMAIN-SUFFIX,mvnrepository.com
+  - DOMAIN-SUFFIX,quay.io
+  - DOMAIN-SUFFIX,redhat.com
+  - DOMAIN-SUFFIX,sonatype.org
+  - DOMAIN-SUFFIX,sourcegraph.com
+  - DOMAIN-SUFFIX,spring.io
+  - DOMAIN-SUFFIX,spring.net
+  - DOMAIN-SUFFIX,stackoverflow.com
+  - DOMAIN-SUFFIX,torproject.org
+  - DOMAIN-SUFFIX,v2ex.com
+  - DOMAIN-SUFFIX,wireguard.com
+  - DOMAIN-SUFFIX,xda-developers.com
+  - DOMAIN-SUFFIX,you-get.org // command-line media download utility
+  - DOMAIN-SUFFIX,zeronet.io
+
   # > Discord
   - DOMAIN-SUFFIX,discord.com
   - DOMAIN-SUFFIX,discord.gg
@@ -325,12 +310,15 @@ payload:
   - DOMAIN-SUFFIX,discordapp.com
   - DOMAIN-SUFFIX,discordapp.net
   - DOMAIN-SUFFIX,discordstatus.com
-  - DOMAIN-KEYWORD,discord
 
   # > Dropbox
   - DOMAIN-SUFFIX,dropbox.com
   - DOMAIN-SUFFIX,dropboxapi.com
   - DOMAIN-SUFFIX,dropboxusercontent.com
+
+  # > Duckduckgo
+  - DOMAIN-SUFFIX,duckduckgo.com
+  - DOMAIN-SUFFIX,spreadprivacy.com
 
   # > Fastly
   - DOMAIN-SUFFIX,freetls.fastly.net
@@ -347,6 +335,24 @@ payload:
   - IP-CIDR,125.209.208.0/20,no-resolve
   - IP-CIDR,147.92.128.0/17,no-resolve
   - IP-CIDR,203.104.144.0/21,no-resolve
+
+  # > Mail Services
+  - DOMAIN-SUFFIX,pm.me
+  - DOMAIN-SUFFIX,proton.me
+  - DOMAIN-SUFFIX,protonmail.ch
+  - DOMAIN-SUFFIX,protonmail.com
+  - DOMAIN-SUFFIX,protonstatus.com
+  - DOMAIN-SUFFIX,tutanota.com
+
+  # > Mastodon
+  - DOMAIN-SUFFIX,joinmastodon.org
+  # More Mastodon instances will be added here, they can be found in https://instances.social/
+  - DOMAIN,m.cmx.im
+  - DOMAIN,mastodon.social
+
+  # > Matrix
+  # More matrix instances will be added here
+  - DOMAIN-SUFFIX,matrix.org
 
   # > Mega
   - DOMAIN-SUFFIX,mega.co.nz
@@ -378,6 +384,7 @@ payload:
 
   # > Microsoft
   - DOMAIN-SUFFIX,aka.ms
+  - DOMAIN-SUFFIX,git.io
   - DOMAIN-SUFFIX,github.blog
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.io
@@ -389,6 +396,85 @@ payload:
   - DOMAIN,assets2.xboxlive.com
   - DOMAIN,az416426.vo.msecnd.net
   - DOMAIN,az668014.vo.msecnd.net
+
+  # ---(Newsletter)---
+  - DOMAIN-SUFFIX,appledaily.com
+  - DOMAIN-SUFFIX,abc.com
+  - DOMAIN-SUFFIX,bbc.com
+  - DOMAIN-SUFFIX,cna.com.tw
+  - DOMAIN-SUFFIX,deadline.com
+  - DOMAIN-SUFFIX,foreignaffairs.com
+  - DOMAIN-SUFFIX,foreignpolicy.com
+  - DOMAIN-SUFFIX,flipboard.com
+  - DOMAIN-SUFFIX,hket.com
+  - DOMAIN-SUFFIX,independent.co.uk
+  - DOMAIN-SUFFIX,huffpost.com
+  - DOMAIN-SUFFIX,nbcnews.com
+  - DOMAIN-SUFFIX,neowin.net
+  - DOMAIN-SUFFIX,newstatesman.com
+  - DOMAIN-SUFFIX,newsweek.com
+  - DOMAIN-SUFFIX,newyorker.com
+  - DOMAIN-SUFFIX,now.com
+  - DOMAIN-SUFFIX,outsightchina.com
+  - DOMAIN-SUFFIX,rthk.hk
+  - DOMAIN-SUFFIX,scmp.com
+  - DOMAIN-SUFFIX,smh.com.au
+  - DOMAIN-SUFFIX,straitstimes.com
+  - DOMAIN-SUFFIX,swissinfo.ch
+  - DOMAIN-SUFFIX,techspot.com
+  - DOMAIN-SUFFIX,theage.com.au
+  - DOMAIN-SUFFIX,theatlantic.com
+  - DOMAIN-SUFFIX,theaustralian.com.au
+  - DOMAIN-SUFFIX,theconversation.com
+  - DOMAIN-SUFFIX,thediplomat.com
+  - DOMAIN-SUFFIX,theguardian.com
+  - DOMAIN-SUFFIX,theinitium.com
+  - DOMAIN-SUFFIX,time.com
+  - DOMAIN-SUFFIX,venturebeat.com
+  - DOMAIN-SUFFIX,washingtonpost.com
+  - DOMAIN-SUFFIX,welt.de
+  - DOMAIN-SUFFIX,wn.com
+  - DOMAIN-SUFFIX,wsj.com
+  - DOMAIN-SUFFIX,wsj.net
+  - DOMAIN-SUFFIX,voanews.com
+  - DOMAIN-SUFFIX,voachinese.com
+  - DOMAIN-SUFFIX,zaobao.com
+  - DOMAIN-SUFFIX,chinadigitaltimes.net
+
+  # > Financial Times
+  - DOMAIN-SUFFIX,ft.com
+  - DOMAIN-SUFFIX,ftchinese.com
+  - DOMAIN-SUFFIX,ftimg.net
+
+  # > Bloomberg
+  - DOMAIN-SUFFIX,bloomberg.cn
+  - DOMAIN-SUFFIX,bloomberg.com
+  - DOMAIN-SUFFIX,bloomberg.de
+  - DOMAIN-SUFFIX,bloombergview.com
+
+  # > Reuters
+  - DOMAIN-SUFFIX,reuters.com
+  - DOMAIN-SUFFIX,reutersmedia.net
+
+  # > The Economist
+  - DOMAIN-SUFFIX,economist.com
+  - DOMAIN-SUFFIX,static-economist.com
+
+  # > The New York Times
+  - DOMAIN-SUFFIX,newyorktimes.com
+  - DOMAIN-SUFFIX,nyt.com
+  - DOMAIN-SUFFIX,nytco.com
+  - DOMAIN-SUFFIX,nytimes.com
+  - DOMAIN-SUFFIX,nytimg.com
+  - DOMAIN-SUFFIX,nytlog.com
+  - DOMAIN-SUFFIX,nytstyle.com
+  - DOMAIN-SUFFIX,tmagazine.com
+  # ------
+
+  # Password Manager
+  - DOMAIN-SUFFIX,1password.com
+  - DOMAIN-SUFFIX,1passwordservices.com
+  - DOMAIN-SUFFIX,bitwarden.com
 
   # > Pinterest
   - DOMAIN-SUFFIX,pinimg.com
@@ -405,13 +491,9 @@ payload:
   - DOMAIN-SUFFIX,redditmedia.com
   - DOMAIN-SUFFIX,redditstatic.com
 
-  # > Reuters
-  - DOMAIN-SUFFIX,reuters.com
-  - DOMAIN-SUFFIX,reutersmedia.net
-
   # > Steam
   - DOMAIN-SUFFIX,steamcommunity.com
-  # - DOMAIN,store.steampowered.com
+  - DOMAIN,store.steampowered.com
   - DOMAIN-SUFFIX,steam-chat.com
 
   # > Telegram
@@ -436,20 +518,6 @@ payload:
   - IP-CIDR,2001:67c:4e8::/48,no-resolve
   - IP-CIDR,2001:b28:f23c::/48,no-resolve
   - IP-CIDR,2a0a:f280::/32,no-resolve
-
-  # > The Economist
-  - DOMAIN-SUFFIX,economist.com
-  - DOMAIN-SUFFIX,static-economist.com
-
-  # > The New York Times
-  - DOMAIN-SUFFIX,newyorktimes.com
-  - DOMAIN-SUFFIX,nyt.com
-  - DOMAIN-SUFFIX,nytco.com
-  - DOMAIN-SUFFIX,nytimes.com
-  - DOMAIN-SUFFIX,nytimg.com
-  - DOMAIN-SUFFIX,nytlog.com
-  - DOMAIN-SUFFIX,nytstyle.com
-  - DOMAIN-SUFFIX,tmagazine.com
 
   # > Twitter
   - DOMAIN-SUFFIX,periscope.tv
@@ -498,7 +566,6 @@ payload:
   - DOMAIN-SUFFIX,ifixit.com
   - DOMAIN-SUFFIX,terabox.com
   - DOMAIN-SUFFIX,zaobao.com.sg
-  - DOMAIN,addons.mozilla.org
   - DOMAIN,wego.here.com
 
   # > Alphabet
@@ -506,13 +573,13 @@ payload:
   - DOMAIN-SUFFIX,golang.org
 
   # ---(Apple)---
-  - DOMAIN-SUFFIX,appsto.re
-  - DOMAIN-SUFFIX,smoot.apple.com
-  - DOMAIN,amp-api.podcasts.apple.com
-  - DOMAIN,beta.music.apple.com
-  - DOMAIN,books.itunes.apple.com
-  - DOMAIN,lookup-api.apple.com
-  - DOMAIN,radio.itunes.apple.com
+  - DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
+  - DOMAIN-SUFFIX,smoot.apple.com // Spotlight
+  - DOMAIN,amp-api.podcasts.apple.com // Podcasts
+  - DOMAIN,beta.music.apple.com // Apple Music Web
+  - DOMAIN,books.itunes.apple.com // iBooks Store Download
+  - DOMAIN,lookup-api.apple.com // Look Up
+  - DOMAIN,radio.itunes.apple.com // Apple Music Radio
 
   # > Web Preview
   - DOMAIN,apps.apple.com
@@ -536,6 +603,7 @@ payload:
   - DOMAIN-SUFFIX,duolingo.cn
   - DOMAIN-SUFFIX,duolingo.com
 
+
   # ---(Microsoft)---
   - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,linkedin.com
@@ -543,7 +611,7 @@ payload:
   - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,skype.com
 
-  # Microsoft Teams
+  # > Microsoft Teams
   - DOMAIN-SUFFIX,teams.cdn.live.net
   - DOMAIN-SUFFIX,teams.live.com
   - DOMAIN-SUFFIX,teams.microsoft.com
