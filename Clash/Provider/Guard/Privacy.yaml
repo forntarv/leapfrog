@@ -90,7 +90,7 @@ payload:
 
   # > MI
   - DOMAIN-SUFFIX,tracking.miui.com
-  - DOMAIN,api.miwifi.com // Affect Mi Wi-Fi(id859962702), for details, see https://www.v2ex.com/t/746094
+  - DOMAIN,api.miwifi.com # Affect Mi Wi-Fi(id859962702), for details, see https://www.v2ex.com/t/746094
   - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN,tracking.intl.miui.com
 

@@ -2,9 +2,9 @@ payload:
   # Global Networks
 
   # (D.C.S.G?)
-  - DOMAIN-SUFFIX,lowiro.com // Arcaea
+  - DOMAIN-SUFFIX,lowiro.com # Arcaea
   - DOMAIN-SUFFIX,apkpure.org
-  - DOMAIN-SUFFIX,lencr.io // Let's Encrypt
+  - DOMAIN-SUFFIX,lencr.io # Let's Encrypt
   - DOMAIN-SUFFIX,onesignal.com
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,notion.so
@@ -16,7 +16,7 @@ payload:
 
   - DOMAIN-SUFFIX,9cache.com
   - DOMAIN-SUFFIX,9gag.com
-  - DOMAIN-SUFFIX,anchor.fm // by Spotify
+  - DOMAIN-SUFFIX,anchor.fm # by Spotify
   - DOMAIN-SUFFIX,archive.fo
   - DOMAIN-SUFFIX,archive.org
   - DOMAIN-SUFFIX,archive.ph
@@ -300,7 +300,7 @@ payload:
   - DOMAIN-SUFFIX,v2ex.com
   - DOMAIN-SUFFIX,wireguard.com
   - DOMAIN-SUFFIX,xda-developers.com
-  - DOMAIN-SUFFIX,you-get.org // command-line media download utility
+  - DOMAIN-SUFFIX,you-get.org # command-line media download utility
   - DOMAIN-SUFFIX,zeronet.io
 
   # > Discord
@@ -573,13 +573,13 @@ payload:
   - DOMAIN-SUFFIX,golang.org
 
   # ---(Apple)---
-  - DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
-  - DOMAIN-SUFFIX,smoot.apple.com // Spotlight
-  - DOMAIN,amp-api.podcasts.apple.com // Podcasts
-  - DOMAIN,beta.music.apple.com // Apple Music Web
-  - DOMAIN,books.itunes.apple.com // iBooks Store Download
-  - DOMAIN,lookup-api.apple.com // Look Up
-  - DOMAIN,radio.itunes.apple.com // Apple Music Radio
+  - DOMAIN-SUFFIX,appsto.re # Apple URL Shortener
+  - DOMAIN-SUFFIX,smoot.apple.com # Spotlight
+  - DOMAIN,amp-api.podcasts.apple.com # Podcasts
+  - DOMAIN,beta.music.apple.com # Apple Music Web
+  - DOMAIN,books.itunes.apple.com # iBooks Store Download
+  - DOMAIN,lookup-api.apple.com # Look Up
+  - DOMAIN,radio.itunes.apple.com # Apple Music Radio
 
   # > Web Preview
   - DOMAIN,apps.apple.com
