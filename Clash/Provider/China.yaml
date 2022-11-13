@@ -5,10 +5,13 @@ payload:
   - DOMAIN-SUFFIX,gandi.net
   - DOMAIN-SUFFIX,snapdrop.net
   - DOMAIN,download.jetbrains.com
-  - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN,origin-a.akamaihd.net # Origin Download
   - DOMAIN,epicgames
 
   # ---(Microsoft)---
+  # > OneDrive for Business
+  - DOMAIN-SUFFIX,sharepoint.com
+
   # > Outlook
   - DOMAIN,outlook.office365.com
   - DOMAIN,smtp-mail.outlook.com
@@ -25,15 +28,8 @@ payload:
   - DOMAIN,ntservicepack.microsoft.com
   # ------
 
-  # > Sony
-  - DOMAIN-SUFFIX,playstation.com
-  - DOMAIN-SUFFIX,playstation.net
-  - DOMAIN-SUFFIX,playstationnetwork.com
-  - DOMAIN-SUFFIX,sony.com
-  - DOMAIN-SUFFIX,sonyentertainmentnetwork.com
-
   # > Steam
-  - DOMAIN-SUFFIX,cm.steampowered.com
+  - DOMAIN-SUFFIX,cm.steampowered.com # Steam Connect Manager Servers
   - DOMAIN,api.steampowered.com
 
   # > Tencent
