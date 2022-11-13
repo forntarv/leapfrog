@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,flyert.com
 DOMAIN-SUFFIX,gandi.net
 DOMAIN-SUFFIX,snapdrop.net
 DOMAIN,origin-a.akamaihd.net // Origin Download
+DOMAIN-KEYWORD,epicgames
 
 # > Microsoft
 DOMAIN-SUFFIX,gfx.ms
