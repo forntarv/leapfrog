@@ -169,6 +169,9 @@ IP-CIDR,211.161.101.110/32,no-resolve
 IP-CIDR,220.115.251.25/32,no-resolve
 IP-CIDR,222.73.156.235/32,no-resolve
 
+# > UC Browser Website Hijacking
+DOMAIN-SUFFIX,u3.ucweb.com
+
 
 # Malware
 
