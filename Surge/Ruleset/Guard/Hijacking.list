@@ -99,6 +99,7 @@ DOMAIN-SUFFIX,tt3sm4.cn
 DOMAIN-SUFFIX,tuia.cn
 DOMAIN-SUFFIX,tuipenguin.com
 DOMAIN-SUFFIX,tuitiger.com
+DOMAIN-SUFFIX,u3.ucweb.com
 DOMAIN-SUFFIX,urlaw.cn
 DOMAIN-SUFFIX,urlet.cn
 DOMAIN-SUFFIX,websd8.com
@@ -168,9 +169,6 @@ IP-CIDR,211.161.101.106/32,no-resolve
 IP-CIDR,211.161.101.110/32,no-resolve
 IP-CIDR,220.115.251.25/32,no-resolve
 IP-CIDR,222.73.156.235/32,no-resolve
-
-# > UC Browser Website Hijacking
-DOMAIN-SUFFIX,u3.ucweb.com
 
 
 # Malware
