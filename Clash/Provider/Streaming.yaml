@@ -114,7 +114,7 @@ payload:
   - DOMAIN,d22qjgkvxw22r6.cloudfront.net
   - DOMAIN,d1v5ir2lpwr8os.cloudfront.net
   - DOMAIN,d27xxe7juh1us6.cloudfront.net
-  # DOMAIN,www.amazon.com
+  # - DOMAIN,www.amazon.com
   - DOMAIN-KEYWORD,avoddashs
 
   # > Apple Music TV
@@ -193,6 +193,12 @@ payload:
   - DOMAIN-SUFFIX,encoretvb.com
   - DOMAIN,edge.api.brightcove.com
   - DOMAIN,bcbolt446c5271-a.akamaihd.net
+
+  # > Hami Video
+  - DOMAIN-SUFFIX,ott.hinet.net
+  - DOMAIN-SUFFIX,hamivideo.hinet.net
+  - DOMAIN,hls-hichannel.cdn.hinet.net
+  - DOMAIN-KEYWORD,hamivideo.cdn.hinet.net
 
   # > HBO NOW & Max
   - PROCESS-NAME,com.hbo.hbonow
@@ -281,6 +287,7 @@ payload:
   - PROCESS-NAME,com.litv.mobile.gp.litv
   - DOMAIN-SUFFIX,litv.tv
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
+  - DOMAIN,theater-kktv.cdn.hinet.net
 
   # > My5
   - PROCESS-NAME,com.mobileiq.demand5

@@ -174,6 +174,12 @@ DOMAIN-SUFFIX,encoretvb.com
 DOMAIN,edge.api.brightcove.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 
+# > Hami Video
+DOMAIN-SUFFIX,ott.hinet.net
+DOMAIN-SUFFIX,hamivideo.hinet.net
+DOMAIN,hls-hichannel.cdn.hinet.net
+DOMAIN-KEYWORD,hamivideo.cdn.hinet.net
+
 # > HBO NOW & Max
 DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
@@ -246,6 +252,7 @@ USER-AGENT,com.kktv.ios.kktv*
 DOMAIN-SUFFIX,kktv.com.tw
 DOMAIN-SUFFIX,kktv.me
 DOMAIN,kktv-theater.kk.stream
+DOMAIN,theater-kktv.cdn.hinet.net
 
 # > LINE TV
 DOMAIN-SUFFIX,linetv.tw
