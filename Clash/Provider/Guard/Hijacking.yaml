@@ -172,23 +172,16 @@ payload:
 
 
   # Malware
-  
-  # > Huawei AspiegelBot
-  - IP-CIDR,114.119.160.0/21,no-resolve
 
-  # > KuaiZip
-  # https://zhuanlan.zhihu.com/p/39534279
-  - DOMAIN-SUFFIX,kuaizip.com
-
-  # > MacKeeper
-  # https://www.lizhi.io/blog/40002904
-  - DOMAIN-SUFFIX,mackeeper.com
-  - DOMAIN-SUFFIX,zryydi.com
-
-  # > Adobe Flash China Special Edition
+# > Adobe Flash China Special Edition
   # https://www.zhihu.com/question/281163698/answer/441388130
   - DOMAIN-SUFFIX,flash.cn
   - DOMAIN,geo2.adobe.com
+
+  # > China National Anti-Fraud Center
+  # https://github.com/lwd-temp/anti-ip-attribution
+  - DOMAIN-SUFFIX,gjfzpt.cn
+  - IP-CIDR,219.143.187.136/32
 
   # > C&J Marketing
   # https://www.zhihu.com/question/46746200
@@ -256,3 +249,15 @@ payload:
   - DOMAIN-SUFFIX,yuanchengxiezuo.com
   - DOMAIN-SUFFIX,zbrushcn.com
   - DOMAIN-SUFFIX,zhzzx.com
+
+  # > Huawei AspiegelBot
+  - IP-CIDR,114.119.160.0/21,no-resolve
+
+  # > KuaiZip
+  # https://zhuanlan.zhihu.com/p/39534279
+  - DOMAIN-SUFFIX,kuaizip.com
+
+  # > MacKeeper
+  # https://www.lizhi.io/blog/40002904
+  - DOMAIN-SUFFIX,mackeeper.com
+  - DOMAIN-SUFFIX,zryydi.com

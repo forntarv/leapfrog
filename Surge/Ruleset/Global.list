@@ -345,13 +345,16 @@ DOMAIN-SUFFIX,tutanota.com
 
 # > Mastodon
 DOMAIN-SUFFIX,joinmastodon.org
+DOMAIN-SUFFIX,tooot.app // Third-party Mastodon Client for iOS
 # More Mastodon instances will be added here, they can be found in https://instances.social/
-DOMAIN,m.cmx.im
-DOMAIN,mastodon.social
+DOMAIN-SUFFIX,cmx.im
+DOMAIN-SUFFIX,mastodon.social
+DOMAIN-SUFFIX,alive.bar
 
 # > Matrix
 DOMAIN-SUFFIX,matrix.org
 # More matrix instances will be added here
+DOMAIN-SUFFIX,catgirl.cloud
 
 # > Mega
 DOMAIN-SUFFIX,mega.co.nz
