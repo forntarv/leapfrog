@@ -181,7 +181,7 @@ DOMAIN,geo2.adobe.com
 # > China National Anti-Fraud Center
 # https://github.com/lwd-temp/anti-ip-attribution
 DOMAIN-SUFFIX,gjfzpt.cn
-IP-CIDR,219.143.187.136/32
+IP-CIDR,219.143.187.136/32,no-resolve
 
 # > C&J Marketing
 # https://www.zhihu.com/question/46746200
